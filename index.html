@@ -1,33 +1,16 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Menu</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-
-  <body>
-    <header>
-      <nav>
-        <a class="logo" href="/">Codes</a>
-        <div class="mobile-menu">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-        </div>
-        <ul class="nav-list">
-          <li><a href="#">Início</a></li>
-          <li><a href="#">Sobre</a></li>
-          <button type="submit" onclick="ConverterReal()">Converter para Real</button>
-          <button type="submit" onclick="ConverterDolar()">Converter para Dolar</button>
-          <li><a href="#">Projetos</a></li>
-          <li><a href="#">Contato</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main></main>
-    <script src="mobile-navbar.js"></script>
-  </body>
-</html>
+<div class="container">
+  <h1 class="page-title">
+    Conversor de valores
+  </h1>
+  <p class="page-subtitle">
+    Descubra os valores
+  </p>
+  <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" class="page-logo" alt=""><br><br>
+  <label for="moeda">Insira o valor</label><br>
+  <input type="number" placeholder="Digite o valor" id="valor" size="2" /><br>
+  <button type="submit" onclick="ConverterReal()">Converter para Real</button>
+  <button type="submit" onclick="ConverterDolar()">Converter para Dolar</button>
+  <div id="valorConvertido"></div>
+</div>
+<a href="https://alura.com.br/" target="_blank">
+  <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
